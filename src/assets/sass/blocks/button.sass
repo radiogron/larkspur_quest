@@ -1,0 +1,19 @@
+@import ./../config
+
+    
+    
+.button
+    font-size: 1rem
+    border: none
+    outline: none
+    height: $base-grid * 5
+    padding:
+        left: $base-grid * 2
+        right: $base-grid * 2
+    border-radius: $base-grid / 2
+    // Modifiers
+    &--primary
+        background-color: $primary
+        color: white
+        &:hover, &:active
+            outline: darken($primary, 15%)
