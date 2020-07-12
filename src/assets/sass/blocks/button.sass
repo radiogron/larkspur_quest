@@ -11,9 +11,22 @@
         left: $base-grid * 2
         right: $base-grid * 2
     border-radius: $base-grid / 2
+    text-decoration: none
+    &[href]
+        display: inline-flex
+        align-items: center
     // Modifiers
     &--primary
         background-color: $primary
         color: white
         &:hover, &:active
             outline: darken($primary, 15%)
+    &--white
+        background-color: white
+        color: black
+        &:hover, &:active
+            outline: darken(white, 15%)
+    &--sign-in
+        height: $base-grid * 4
+        border: 1px solid white
+        color: white

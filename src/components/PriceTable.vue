@@ -42,7 +42,7 @@
             <div class="prices__value prices__value--pro prices__value--contains">
                 <span class="prices__value-text prices__value-text--visible-mobile">Automated email campaigns to 700k qualified plans</span>
             </div>
-            <div class="prices__value prices__value--pro prices__value--contains">
+            <div class="prices__value prices__value--pro">
                 <span class="prices__value-text prices__value-text">300</span>
                 <span class="prices__value-text prices__value-text--visible-mobile">Simultaneous campaigns</span>
             </div>
@@ -60,8 +60,8 @@
             <!-- Platinum table -->
             <div class="prices__header prices__header--platinum">
                 <span class="prices__header-title">Platinum</span>
-                <span class="prices__header-cost">$10.000</span>
-                <span class="prices__header-users">/ user/ 12 Months</span>
+                <span class="prices__header-cost">$10,000</span>
+                <span class="prices__header-users">/ user / 12 Months</span>
             </div>
             <div class="prices__value prices__value--platinum prices__value--contains">
                 <span class="prices__value-text prices__value-text--visible-mobile">850,000+ plans</span>
@@ -72,8 +72,8 @@
             <div class="prices__value prices__value--platinum prices__value--contains">
                 <span class="prices__value-text prices__value-text--visible-mobile">Automated email campaigns to 700k qualified plans</span>
             </div>
-            <div class="prices__value prices__value--platinum prices__value--contains">
-                <span class="prices__value-text prices__value-text">300</span>
+            <div class="prices__value prices__value--platinum">
+                <span class="prices__value-text prices__value-text">3,000</span>
                 <span class="prices__value-text prices__value-text--visible-mobile">Simultaneous campaigns</span>
             </div>
             <div class="prices__value prices__value--platinum prices__value--contains">
@@ -181,16 +181,17 @@ export default {
         display: block
         font:
             weight: bold
-            size: $base-grid * 3
+            size: $base-grid * 3.5
+        margin:
+            top: $base-grid * 2
+            bottom: $base-grid * 2
     .prices__header-users
         font:
             size: .8rem
         color: $gray--dark
     .prices__value
         text-align: center
-        padding:
-            top: $base-grid
-            bottom: $base-grid
+        padding: $base-grid
         background-color: white
         & + .prices__value
             border:

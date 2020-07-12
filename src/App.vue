@@ -11,6 +11,9 @@
     <Features
         title="Features"
         v-on:created="collectSections"/>
+    <Testimonials
+        title="Testimonials"
+        v-on:created="collectSections"/>
     <Price-Table
         title="Prices"
         v-on:created="collectSections"/>
@@ -23,6 +26,7 @@ import Heroscreen from './components/Heroscreen.vue'
 import MainNavigation from './components/MainNavigation.vue'
 import Features from './components/Features.vue'
 import PriceTable from './components/PriceTable.vue'
+import Testimonials from './components/Testimonials.vue'
 import Footer from './components/Footer.vue'
 
 export default {
@@ -42,6 +46,7 @@ export default {
         MainNavigation,
         Features,
         PriceTable,
+        Testimonials,
         Footer
     },
 }
@@ -53,6 +58,7 @@ export default {
 @import ./assets/sass/blocks/field
 @import ./assets/sass/blocks/link
 @import ./assets/sass/blocks/paragraph
+@import ./assets/sass/blocks/list
 
 .page
     .page__header

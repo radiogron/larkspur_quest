@@ -23,7 +23,7 @@
         </div>
         <nav class="footer__projects-info">
             <h5 class="footer__projects-info-title">Our pojects</h5>
-            <ul class="list">
+            <ul class="list list--unstyled">
                 <li class="list__item"><a href="#" class="link">LE PRO</a></li>
                 <li class="list__item"><a href="#" class="link">RegBI Optimizer</a></li>
                 <li class="list__item"><a href="#" class="link">401kFiduciaryOptimizer</a></li>
@@ -68,10 +68,13 @@ export default {
             bottom: $base-grid * 5
         background-color: $gray
         border-radius: $base-grid
+        @media (max-width:$desktop-size)
+            flex-wrap: wrap
     .footer__request-demo-text
-        width: 66%
-        padding:
-            right: $base-grid * 2
+        @media (min-width:$desktop-size)
+            width: 66%
+            padding:
+                right: $base-grid * 2
     .footer__request-demo-form
     .footer__request-demo-title
         font:
@@ -99,8 +102,9 @@ export default {
         color: $gray
         padding:
             top: $base-grid * 5
-        margin:
-            left: auto
+        @media (min-width:$tablet-size)
+            margin:
+                left: auto
     .footer__projects-info-title
         color: white
         margin:
