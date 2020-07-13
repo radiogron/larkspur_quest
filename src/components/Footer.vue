@@ -53,16 +53,27 @@ export default {
 
 .footer
     padding: $base-grid * 2
-    background-color: $dark-background
+    position: relative
     display: flex
     flex-wrap: wrap
+    background-color: $gray--light
     // Elems
+    &:before
+        content: ''
+        display: block
+        position: absolute
+        left: 0
+        top: $base-grid * 10
+        z-index: 0
+        width: 100%
+        height: calc(100% - #{$base-grid * 10})
+        background-color: $dark-background
     .footer__request-demo
         display: flex
+        z-index: 2
         align-items: center
         max-width: $container-width
         margin: auto
-            top: -$base-grid * 10
         padding: $base-grid * 4
             top: $base-grid * 8
             bottom: $base-grid * 5
@@ -84,6 +95,7 @@ export default {
     .footer__request-demo-description
         font-size: .8rem
     .footer__company-info
+        z-index: 2
         min:
             width: $mobile-size
         width: 33%
@@ -96,6 +108,7 @@ export default {
            margin:
                bottom: 0 
     .footer__projects-info
+        z-index: 2
         min:
             width: $mobile-size
         width: 33%

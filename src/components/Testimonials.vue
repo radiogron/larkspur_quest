@@ -49,11 +49,15 @@ export default {
 
 .testimonials
     padding:
-        top: $base-grid * 10
-        bottom: $base-grid * 10
+        top: $base-grid * 3
+        bottom: $base-grid * 3
         left: $base-grid * 2
         right: $base-grid * 2
     background-color: $dark-background
+    @media (min-width:$tablet-size)
+        padding:
+            top: $base-grid * 10
+            bottom: $base-grid * 10
     // Elems
     .testimonials__title-supscription
         text-align: center
@@ -79,6 +83,8 @@ export default {
                 gap: $base-grid * 3
     .testimonials__card
         align-self: center
+        @media (max-width:$tablet-size)
+            margin-bottom: $base-grid * 3
         &:nth-child(2)
             grid:
                 row: 1 / span 2

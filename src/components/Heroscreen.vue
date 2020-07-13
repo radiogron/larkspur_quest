@@ -37,9 +37,12 @@ export default {
     flex-direction: column
     align-items: center
     padding:
-        top: $base-grid * 20
+        top: $base-grid * 5
         left: $base-grid * 2
         right: $base-grid * 2
+    @media (min-width:$tablet-size)
+        padding:
+            top: $base-grid * 20
     // Elements
     .heroscreen__product-title
         z-index: 2

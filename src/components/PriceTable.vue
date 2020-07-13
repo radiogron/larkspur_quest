@@ -109,12 +109,16 @@ export default {
 .prices
     min-height: 100vh
     padding:
-        top: $base-grid * 10
-        bottom: $base-grid * 20
+        top: $base-grid * 3
+        bottom: $base-grid * 3
         left: $base-grid * 2
         right: $base-grid * 2
     background:
         color: $gray--light
+    @media (min-width:$tablet-size)
+        padding:
+            top: $base-grid * 10
+            bottom: $base-grid * 10
     .prices__table
         @media (min-width:$tablet-size)
             display: grid
@@ -131,6 +135,10 @@ export default {
                 background:
                     color: rgba(black, .1)
     // Elems
+    .prices__title
+        margin-top: 0
+        line-height: 1.1
+        margin-bottom: $base-grid
     .prices__description
         padding-bottom: $base-grid * 2
     .prices__option
