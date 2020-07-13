@@ -35,7 +35,8 @@ export default {
         bottom: $base-grid * 3
         left: $base-grid * 2
         right: $base-grid * 2
-    display: flex
+    @media (min-width:$tablet-size)
+        display: flex
     // Elements
     .rest-features__item
         text-align: center
@@ -43,6 +44,9 @@ export default {
         display: flex
         flex-direction: column
         align-items: center
+        padding:
+            left: $base-grid * 2
+            right: $base-grid * 2
         @media (min-width:$tablet-size)
             &:nth-last-child(2)
                 border:

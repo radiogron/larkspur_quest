@@ -83,7 +83,7 @@ export default {
                 gap: $base-grid * 3
     .testimonials__card
         align-self: center
-        @media (max-width:$tablet-size)
+        @media (max-width:$desktop-size)
             margin-bottom: $base-grid * 3
         &:nth-child(2)
             grid:
