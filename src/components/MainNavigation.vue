@@ -1,6 +1,9 @@
 <template>
-    <header class="header">
-        <nav class="header__container">
+    <header 
+        class="header"
+        ref="header">
+        <nav 
+            class="header__container">
             <Logo
                 class="header__logo"
                 :white="true"/>
@@ -47,9 +50,8 @@ export default {
     methods: {
         checkScrollPosition() {
             this.restNavNodes = this.navigation.filter((item)=>{
-                //console.log(document.getElementById(item.id).offsetHeight)
                 return (document.getElementById(item.id).offsetTop + 
-                        document.getElementById(item.id).offsetHeight) >= window.pageYOffset;
+                        document.getElementById(item.id).offsetHeight) >= window.pageYOffset + this.$refs.header.offsetHeight;
             })
         }
     },
